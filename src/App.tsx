@@ -8,6 +8,12 @@ import { AboutSection } from "./components/AboutSection/AboutSection";
 import { ProjectsSection } from "./components/ProjectsSection/ProjectsSection";
 import { EducationSection } from "./components/EducationSection/EducationSection";
 import { CareerTimeline } from "./components/CareerSection/CareerTimeline";
+import { StatsSection } from "./components/StatsSection/StatsSection";
+import { CertificationsSection } from "./components/CertificationsSection/CertificationsSection";
+import { AchievementsSection } from "./components/AchievementsSection/AchievementsSection";
+import { GitHubSection } from "./components/GitHubSection/GitHubSection";
+import { ContactSection } from "./components/ContactSection/ContactSection";
+import { FooterSection } from "./components/FooterSection/FooterSection";
 import ReactLenis from "lenis/react";
 import Dock from "./components/lightswind/dock";
 import {
@@ -99,6 +105,7 @@ function App() {
             </div>
             <div id="about">
               <AboutSection />
+              <StatsSection />
             </div>
             <div id="education">
               <EducationSection />
@@ -109,6 +116,11 @@ function App() {
             <div id="projects">
               <ProjectsSection />
             </div>
+            <CertificationsSection />
+            <AchievementsSection />
+            <GitHubSection />
+            <ContactSection />
+            <FooterSection />
           </div>
         </div>
 

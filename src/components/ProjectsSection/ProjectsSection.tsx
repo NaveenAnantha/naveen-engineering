@@ -8,45 +8,66 @@ export const ProjectsSection = () => {
   const [projects] = useState([
     {
       id: 1,
-      title: "AI-Powered Design Automation Platform",
+      title: "Professional Project — StandOut",
       subtitle:
-        "Developed an AI-driven platform that automates design workflows for global e-commerce brands...",
-      date: "2024",
-      link: "https://example.com/ai-platform",
-      image:
-        "https://images.pexels.com/photos/8294591/pexels-photo-8294591.jpeg",
+        "An AI-powered career preparation platform designed to help users practice interviews and track opportunities.",
+      date: "Professional Experience",
+      link: "#",
+      kind: "Professional",
+      summary: "Built and refined product experiences for a modern career-preparation workflow with a focus on reliability and usability.",
+      impact: "Contributed to a product experience that blends user journey design, frontend architecture, and intelligent guidance.",
+      tags: ["Next.js", "TypeScript", "Supabase", "Stripe", "OpenAI API", "FastAPI", "Python"],
     },
     {
       id: 2,
-      title: "Enterprise Resource Planning (ERP) System",
+      title: "Professional Project — Admin Monitoring Platform",
       subtitle:
-        "Led the development of a modular ERP system for a manufacturing conglomerate...",
-      date: "2023",
-      link: "https://example.com/erp",
-      image:
-        "https://images.pexels.com/photos/1148820/pexels-photo-1148820.jpeg",
+        "An internal administration and monitoring platform used to streamline operational oversight and product control.",
+      date: "Professional Experience",
+      link: "#",
+      kind: "Professional",
+      summary: "Delivered engineering work that supported administration workflows and operational visibility in a production environment.",
+      impact: "Focused on maintainability, integration quality, and dependable product behavior within a secure internal system.",
+      tags: ["React", "Node.js", "Express", "TypeScript"],
     },
     {
       id: 3,
-      title: "Blockchain-Based Supply Chain Tracker",
+      title: "Personal Project — DevFusion",
       subtitle:
-        "Created a transparent and tamper-proof supply chain tracking system using Hyperledger Fabric...",
-      date: "2022",
-      link: "https://example.com/supplychain",
-      image:
-        "https://images.pexels.com/photos/6169673/pexels-photo-6169673.jpeg",
+        "A polished full-stack experience with modern UI, email workflows, and refined interaction design.",
+      date: "Personal Project",
+      link: "https://github.com/NaveenAnantha",
+      kind: "Personal",
+      summary: "Explored modern frontend polish and product-ready interaction patterns using React, Tailwind, and animation-driven details.",
+      impact: "Shaped a portfolio-quality experience that emphasizes engineering craft and visual clarity.",
+      tags: ["React", "TypeScript", "Tailwind", "GSAP"],
     },
     {
       id: 4,
-      title: "Global E-Learning Platform",
+      title: "Personal Project — AI PDF Chatbot",
       subtitle:
-        "Designed and implemented a multi-language e-learning platform serving over 1.2 million students...",
-      date: "2021",
-      link: "https://example.com/elearning",
-      image:
-        "https://images.pexels.com/photos/15595050/pexels-photo-15595050.jpeg",
+        "A chatbot experience for querying PDF content with retrieval-augmented generation and semantic retrieval.",
+      date: "Personal Project",
+      link: "https://github.com/NaveenAnantha",
+      kind: "Personal",
+      summary: "Built an AI-native workflow that combines vector search, embeddings, and retrieval logic to create a more useful document experience.",
+      impact: "Strengthened my understanding of AI system design, retrieval quality, and practical LLM application architecture.",
+      tags: ["Python", "FastAPI", "Qdrant", "OpenAI"],
+    },
+    {
+      id: 5,
+      title: "Personal Project — Portfolio Website",
+      subtitle:
+        "A recruiter-ready portfolio built to communicate engineering maturity, product thinking, and continuous learning.",
+      date: "Personal Project",
+      link: "https://github.com/NaveenAnantha/naveen-engineering",
+      kind: "Personal",
+      summary: "Designed as a premium engineering portfolio that balances elegant presentation with strong technical storytelling.",
+      impact: "Represents a focused effort to present product engineering experience with clarity and confidence.",
+      tags: ["React", "TypeScript", "Framer Motion"],
     },
   ]);
+  
 
   return (
     <motion.div
@@ -55,7 +76,7 @@ export const ProjectsSection = () => {
       viewport={{ once: true, amount: 0.2 }}
       transition={{ when: "beforeChildren", staggerChildren: 0.1 }}
     >
-      <section className="max-w-7xl mx-auto px-6 py-12">
+      <section className="w-full xl:max-w-7xl mx-auto px-6 py-12">
         <motion.h2
           className="text-3xl font-bold text-foreground mb-8 text-center"
           initial={{ opacity: 0, y: 20, scale: 0.95 }}
@@ -64,6 +85,9 @@ export const ProjectsSection = () => {
         >
           Projects
         </motion.h2>
+        <p className="mb-8 text-center text-sm text-muted-foreground">
+          Professional work grounded in real delivery, alongside personal projects focused on AI engineering, modern frontend development, and product experimentation.
+        </p>
         <DragOrderList items={projects} />
       </section>
     </motion.div>

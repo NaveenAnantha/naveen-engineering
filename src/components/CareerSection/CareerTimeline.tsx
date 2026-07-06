@@ -1,47 +1,31 @@
 import { ScrollTimeline } from "../lightswind/scroll-timeline";
-import { Briefcase, Award, Layers, Users, Globe } from "lucide-react";
+import { Briefcase, Award, Layers } from "lucide-react";
 
 export const CareerTimeline = () => {
   const careerEvents = [
     {
-      year: "2024 – Present",
-      title: "Director of Product Engineering",
-      subtitle: "TechNova Global Solutions",
+      year: "April 2026 – Present",
+      title: "Software Engineer",
+      subtitle: "Maganti IT Solutions",
       description:
-        "Leading a 200+ engineering team across 5 continents, overseeing full product lifecycle from ideation to global deployment. Introduced AI-driven development pipelines, reducing time-to-market by 38%. Established enterprise-wide accessibility and sustainability design standards.",
-      icon: <Globe className="h-4 w-4 mr-2 text-primary" />,
-    },
-    {
-      year: "2020 – 2024",
-      title: "Senior Principal Engineer & Design Strategist",
-      subtitle: "Innova Digital Labs",
-      description:
-        "Architected scalable microservices for financial and healthcare industries, serving 20M+ active users. Directed the adoption of a unified design system across 12 product lines, increasing brand consistency and dev speed by 50%. Mentored 40+ senior engineers into leadership positions.",
-      icon: <Layers className="h-4 w-4 mr-2 text-primary" />,
-    },
-    {
-      year: "2016 – 2020",
-      title: "Lead Full-Stack Developer",
-      subtitle: "Skyline Interactive",
-      description:
-        "Spearheaded the creation of immersive web applications using React, GraphQL, and Node.js for high-profile clients. Reduced application load times by 70% through advanced performance optimization. Introduced component-driven workflows that became the company's standard practice.",
+        "Building scalable web applications and product experiences with React, Next.js, TypeScript, Node.js, and modern cloud services. Contributing to production features involving authentication, payments, API integrations, and AI-assisted workflows.",
       icon: <Briefcase className="h-4 w-4 mr-2 text-primary" />,
     },
     {
-      year: "2012 – 2016",
-      title: "Senior UI/UX Designer",
-      subtitle: "PixelForge Studios",
+      year: "September 2024 – March 2026",
+      title: "Junior Application Developer",
+      subtitle: "Maganti IT Solutions",
       description:
-        "Designed award-winning digital experiences for global brands, winning multiple Awwwards and Webby Awards. Championed user-centered design by integrating continuous feedback loops into every sprint. Collaborated with cross-functional teams to unify visual and interaction design.",
-      icon: <Award className="h-4 w-4 mr-2 text-primary" />,
+        "Delivered full-stack application features for real-world products, including Stripe payment integration, Supabase authentication and SSO, Google API integrations, and AI-assisted development workflows using GitHub Copilot and Cursor.",
+      icon: <Layers className="h-4 w-4 mr-2 text-primary" />,
     },
     {
-      year: "2008 – 2012",
-      title: "Frontend Developer & Interaction Designer",
-      subtitle: "CreativeSpark Agency",
+      year: "6 Months Internship",
+      title: "Full Stack MERN Intern",
+      subtitle: "SmartInternz",
       description:
-        "Built responsive and interactive marketing websites during the rise of mobile-first design. Created high-conversion landing pages for major e-commerce campaigns. Developed custom animations that improved user engagement metrics by over 45%.",
-      icon: <Users className="h-4 w-4 mr-2 text-primary" />,
+        "Built practical web application experience through hands-on full-stack development with the MERN stack, strengthening problem solving, collaboration, and modern frontend engineering skills.",
+      icon: <Award className="h-4 w-4 mr-2 text-primary" />,
     },
   ];
 
@@ -49,8 +33,8 @@ export const CareerTimeline = () => {
     <div id="career">
       <ScrollTimeline
         events={careerEvents}
-        title="Career Journey"
-        subtitle="An evolving path of leadership, innovation, and impact"
+        title="Experience"
+        subtitle="A practical engineering path from internship to professional software delivery"
         animationOrder="staggered"
         cardAlignment="alternating"
         cardVariant="elevated"
